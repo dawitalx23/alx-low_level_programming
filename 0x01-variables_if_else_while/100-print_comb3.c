@@ -16,8 +16,11 @@ int main(void)
 		{
 			putchar('0' + i);
 			putchar('0' + j);
-			putchar(',');
-			putchar(' ');
+			if (i < 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
