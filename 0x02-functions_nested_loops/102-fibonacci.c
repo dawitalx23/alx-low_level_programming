@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned long long num1 = 0, num2 = 1;
+	unsigned long int num1 = 0, num2 = 1;
 	int counter = 0;
 
 	while (counter < 50)
@@ -15,9 +15,9 @@ int main(void)
 		num1 = num1 + num2;
 		num2 = num2 + num1;
 		if (counter < 48)
-			printf("%llu, %llu, ", num1, num2);
+			printf("%lu, %lu, ", num1, num2);
 		else
-			printf("%llu, %llu\n", num1, num2);
+			printf("%lu, %lu\n", num1, num2);
 		counter += 2;
 	}
 	return (0);
