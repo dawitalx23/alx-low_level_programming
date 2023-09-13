@@ -8,9 +8,9 @@
 int main(void)
 {
 	int count;
-	unsigned long int num1 = 0, num2 = 1, num3;
-	unsigned long int num1_mult, num1_rem, num2_mult, num2_rem;
-	unsigned long int mult, rem;
+	unsigned long num1 = 0, num2 = 1, num3;
+	unsigned long num1_mult, num1_rem, num2_mult, num2_rem;
+	unsigned long mult, rem;
 
 	while (count < 92)
 	{
