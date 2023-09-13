@@ -7,18 +7,44 @@
  */
 int main(void)
 {
-	unsigned long int num1 = 0, num2 = 1;
-	int counter = 0;
+	int count;
+	unsigned long int num1 = 0, num2 = 1, num3;
+	unsigned long int num1_mult, num1_rem, num2_mult, num2_rem;
+	unsigned long int mult, rem;
 
-	while (counter < 98)
+	while (count < 92)
 	{
-		num1 = num1 + num2;
-		num2 = num2 + num1;
-		if (counter < 96)
-			printf("%lu, %lu, ", num1, num2);
-		else
-			printf("%lu, %lu\n", num1, num2);
-		counter += 2;
+		num3 = num1 + num2;
+		printf("%lu, ", num3);
+		num1 = num2;
+		num2 = num3;
+		count++;
 	}
+	num1_mult = num1 / 10000000000;
+	num1_rem = num1 % 10000000000;
+
+	num2_mult = num2 / 10000000000;
+	num2_rem = num2 % 10000000000;
+
+	count = 93;
+
+	while (count < 93)
+	{
+		mult = num1_mult + num2_mult;
+		rem = num1_rem + num2_rem;
+		if ((num1_rem + num2_rem) > 9999999999)
+		{
+			mult++;
+			rem %= 10000000000;
+		}
+		printf("%lu%lu", mult, rem);
+		if (count != 98)
+			printf(", ");
+		num1_mult = num2_mult;
+		num1_rem = num2_rem;
+		num2_mult = mult;
+		num2_rem = rem;
+	}
+	printf("\n");
 	return (0);
 }
