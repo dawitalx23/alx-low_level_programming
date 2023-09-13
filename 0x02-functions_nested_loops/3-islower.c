@@ -3,7 +3,7 @@
 /**
  * _islower - checks for lowercase character.
  *
- * parameter - int c
+ * @arg1 - int c
  *
  * Return: int return type
  */
