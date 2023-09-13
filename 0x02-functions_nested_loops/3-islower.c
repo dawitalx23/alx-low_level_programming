@@ -2,8 +2,7 @@
 
 /**
  * _islower - checks for lowercase character.
- *
- * @arg1 - int c
+ * @c: Description of parameter c _islower
  *
  * Return: int return type
  */
