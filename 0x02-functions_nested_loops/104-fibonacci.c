@@ -44,6 +44,7 @@ int main(void)
 		num1_rem = num2_rem;
 		num2_mult = mult;
 		num2_rem = rem;
+		count++;
 	}
 	printf("\n");
 	return (0);
