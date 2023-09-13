@@ -7,16 +7,17 @@
  */
 int main(void)
 {
-	unsigned long int num1 = 0, num2 = 1;
+	unsigned long int num1 = 0, num2 = 1, sum = 0;
 
 	while (num1 + num2 < 4000000)
 	{
 		num1 = num1 + num2;
 		num2 = num2 + num1;
 		if (num1 % 2 == 0)
-			printf("%lu, ", num1);
+			sum += num1;
 		if (num2 % 2 == 0)
-			printf("%lu, ", num2);
+			sum += num2;
 	}
+	printf("%lu\n", sum);
 	return (0);
 }
