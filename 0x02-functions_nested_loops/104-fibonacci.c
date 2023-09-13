@@ -26,9 +26,7 @@ int main(void)
 	num2_mult = num2 / 10000000000;
 	num2_rem = num2 % 10000000000;
 
-	count = 93;
-
-	while (count < 93)
+	for (count = 93; count < 93; count++)
 	{
 		mult = num1_mult + num2_mult;
 		rem = num1_rem + num2_rem;
@@ -44,7 +42,6 @@ int main(void)
 		num1_rem = num2_rem;
 		num2_mult = mult;
 		num2_rem = rem;
-		count++;
 	}
 	printf("\n");
 	return (0);
