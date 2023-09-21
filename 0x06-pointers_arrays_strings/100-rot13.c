@@ -17,7 +17,10 @@ char *rot13(char *s)
 		for (j = 0; inputs[j] != '\0'; j++)
 		{
 			if (s[i] == inputs[j])
+			{
 				s[i] = outputs[j];
+				break;
+			}
 		}
 	}
 	return (s);
