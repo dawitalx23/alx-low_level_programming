@@ -29,8 +29,8 @@ int _findlen(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	int len, i = 0, j = 0;
-	char *constr;
+	int len;
+	char *constr, *temp;
 
 	len = _findlen(s1) + _findlen(s2) + 1;
 
@@ -39,20 +39,19 @@ char *str_concat(char *s1, char *s2)
 	if (constr == NULL)
 		return (NULL);
 
-	while (*(s1 + j) != '\0')
+	temp = constr;
+
+	while (*s1)
 	{
-		constr[i] = *(s1 + j);
-		j++;
-		i++;
+		*temp++ = *s1++;
 	}
 
-	j = 0;
-
-	while (*(s2 + j) != '\0')
+	while (*s2)
 	{
-		constr[i] = *(s2 + j);
-		j++;
-		i++;
+		*temp++ = *s2++;
 	}
+
+	*temp = 0;
+
 	return (constr);
 }
