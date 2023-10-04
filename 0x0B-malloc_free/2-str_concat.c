@@ -12,7 +12,7 @@ int _findlen(char *s)
 	int i = 0;
 
 	if (!s)
-		return (0);
+		s = "";
 
 	while (*s)
 	{
