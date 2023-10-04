@@ -11,9 +11,6 @@ int _findlen(char *s)
 {
 	int i = 0;
 
-	if (!s)
-		s = "";
-
 	while (*s)
 	{
 		s++;
@@ -44,6 +41,11 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	temp = constr;
+
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
 
 	while (*s1)
 	{
