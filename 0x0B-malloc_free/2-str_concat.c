@@ -34,9 +34,9 @@ char *str_concat(char *s1, char *s2)
 	char *constr, *temp;
 
 	if (!s1)
-                s1 = "";
-        if (!s2)
-                s2 = "";
+		s1 = "";
+	if (!s2)
+		s2 = "";
 
 	len = _findlen(s1) + _findlen(s2) + 1;
 
