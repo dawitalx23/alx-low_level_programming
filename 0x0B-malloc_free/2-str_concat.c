@@ -33,6 +33,11 @@ char *str_concat(char *s1, char *s2)
 	int len;
 	char *constr, *temp;
 
+	if (!s1)
+                s1 = "";
+        if (!s2)
+                s2 = "";
+
 	len = _findlen(s1) + _findlen(s2) + 1;
 
 	constr = (char *) malloc(len * sizeof(char));
@@ -41,11 +46,6 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	temp = constr;
-
-	if (!s1)
-		s1 = "";
-	if (!s2)
-		s2 = "";
 
 	while (*s1)
 	{
