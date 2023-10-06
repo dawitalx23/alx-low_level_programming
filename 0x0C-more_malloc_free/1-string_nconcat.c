@@ -21,7 +21,7 @@ int _findlen(char *s)
 }
 
 /**
- * str_concat - concatenates two strings
+ * string_nconcat - concatenates two strings
  * @s1: arg1
  * @s2: arg2
  * @n: arg3
