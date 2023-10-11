@@ -38,7 +38,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * ob_div - diveds b by a
+ * op_div - diveds b by a
  * @a: arg1
  * @b: arg2
  *

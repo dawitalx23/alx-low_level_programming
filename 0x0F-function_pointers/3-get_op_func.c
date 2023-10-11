@@ -6,7 +6,7 @@
  * get_op_func - return function
  * @s: arg1
  *
- * Return :int
+ * Return: int
  */
 
 int (*get_op_func(char *s))(int, int)
