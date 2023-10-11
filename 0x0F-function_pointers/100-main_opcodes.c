@@ -4,7 +4,7 @@
 /**
  * print_opcodes - prints the opcodes of its own main function
  * @a: arg1
- * @:b: arg2
+ * @b: arg2
  *
  * Return: void
  */
