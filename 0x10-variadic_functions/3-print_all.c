@@ -43,8 +43,8 @@ void print_all(const char * const format, ...)
 					break;
 				}
 				printf("%s", s);
-		}
-		i++;
+				break;
+		} i++;
 	}
 	printf("\n"), va_end(valist);
 }
