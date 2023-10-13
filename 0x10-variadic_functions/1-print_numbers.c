@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * print_numbers - prints numbers, followed by a new line
  * @separator: arg1
