@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 		else if (format[i] == 'i')
 			printf("%d", va_arg(valist, int)), k = 1;
 		else if (format[i] == 'f')
-			printf("%f", va_arg(valist, double)), k = 1
+			printf("%f", va_arg(valist, double)), k = 1;
 		else if (format[i] == 's')
 		{
 			s = va_arg(valist, char *), k = 1;
