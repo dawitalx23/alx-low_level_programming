@@ -22,7 +22,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (; i < n; i++)
 	{
-		sum =+ va_arg(valist, int);
+		sum = sum + va_arg(valist, int);
 	}
 
 	va_end(valist);
