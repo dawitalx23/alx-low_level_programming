@@ -1,5 +1,3 @@
-#include <stddef.h>
-
 /**
  * print_numbers - prints numbers, followed by a new line
  * @separator: arg1
@@ -19,7 +17,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%d", va_arg(valist, int));
 
-		if (separator != NULL && i < n - 1)
+		if (separator && i < n - 1)
 		{
 			printf("%s", separator);
 		}
