@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (t_arg[j] != '\0')
 		{
-			if (format[i] == t_arg[j] && k != NULL)
+			if (format[i] == t_arg[j] && k)
 			{
 				printf(", ");
 				break;
@@ -44,9 +44,9 @@ void print_all(const char * const format, ...)
 		}
 		else if (format[i] == 's')
 		{
-			str = va_arg(valist, char *), k = 1;
+			s = va_arg(valist, char *), k = 1;
 
-			if (s == NULL)
+			if (!s)
 			{
 				printf("(nil)");
 			}
