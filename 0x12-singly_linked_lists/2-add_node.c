@@ -5,7 +5,7 @@
  * @head: arg1
  * @str: arg2
  *
- * Return: 
+ * Return: int
  */
 
 list_t *add_node(list_t **head, const char *str)
@@ -27,7 +27,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	newNode->str = strdup(str);
 	newNode->length = length;
-	newNode->next = *hesd;
+	newNode->next = *head;
 	*head = newNode;
 	return (*head);
 }
